@@ -32,11 +32,94 @@ main section {
     padding: 20px;
     border-radius: 12px;
     background-color: white;
-    color: black;
-    border: 2px dashed blue
+    color: white;
+    border: 2px solid blue;
+    box-shadow: 5px 5px blue;
+    
 }
 
 .btn:hover {
+    box-shadow: none;
+}
+
+.bgcolor {
+    transition: 1s background-color ease-out 0.25s;
+}
+
+.bgcolor:hover {
+    background-color: black;
+    color: white;
+}
+
+.moveup {
+    transition: 0.5s transform ease-out 0.25s;
+}
+
+.moveup:hover {
+    transform: translateY(-50px);
+    background-color: black;
+    color: white;
+}
+
+.movein {
+    transition: 0.5s transform ease-out 0.25s;
+}
+
+.movein:hover {
+    transform: scale(0.5);
+    background-color: black;
+    color: white;
+}
+
+.rotates {
+    transition: 1s transform ease-out 0.25s;
+}
+
+.rotates:hover {
+    transform: rotate(180deg);
+    background-color: black;
+    color: white;
+}
+
+.circle {
+    transition: 1s border-radius ease-out 0.25s;
+}
+
+.circle:hover {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.skew {
+    transition: 0.5s transform ease-out 0.25s;
+}
+
+.skew:hover {
+    transform: skew(20deg);
+    background-color: black;
+    color: white;
+}
+
+.moveleftdownout {
+    transition: 0.5s transform ease-out 0.25s;
+}
+
+.moveleftdownout:hover {
+    transform: translate3d(-25px, 25px, -300px);
+    background-color: black;
+    color: white;
+}
+
+.shadow {
+    transition: 0.7s transform ease-in-out 0.2s,
+    0.7s box-shadow ease-in-out 0.2s,
+    0.7s background-color ease-in-out 0.2s
+}
+
+.shadow:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
     background-color: black;
     color: white;
 }
@@ -46,4 +129,5 @@ main section {
     text-align: center;
     font-weight: bold;
 }
+
 
